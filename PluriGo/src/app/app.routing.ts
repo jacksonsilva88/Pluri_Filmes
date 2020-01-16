@@ -8,7 +8,7 @@ import { DetalhesComponent } from './movies/detalhes/detalhes.component';
 const APP_ROUTING: Routes = [
     {  path: '', component: HomeComponent },
     {  path: 'filmes', component: MoviesComponent },
-    {  path: 'detalhes', component: DetalhesComponent },
+    {  path: 'detalhes/:id', component: DetalhesComponent },
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(APP_ROUTING);
