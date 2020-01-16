@@ -26,7 +26,7 @@ export class DetalhesComponent implements OnInit {
       }
     );
     this.getDetalhes();
-    console.log(this.getDetalhes());
+    //console.log(this.getDetalhes());
     //console.log(this.inscricao);
     //this.getDetalhes()
   }
