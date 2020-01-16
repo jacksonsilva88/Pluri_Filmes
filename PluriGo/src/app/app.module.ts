@@ -1,4 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,8 +17,7 @@ import { NowPlayingService }  from './now-playing.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule
+    BrowserAnimationsModule
   ],
   providers: [NowPlayingService],
   bootstrap: [AppComponent]
