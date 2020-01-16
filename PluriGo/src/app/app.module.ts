@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { routing } from './app.routing';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +27,8 @@ import { DetalhesComponent } from './movies/detalhes/detalhes.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
+    routing,
   ],
   exports:[
     MoviesComponent,

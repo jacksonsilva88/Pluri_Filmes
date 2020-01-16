@@ -5,7 +5,7 @@
     <li *ngFor="let i of filme">
         {{i.title}}
         <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{i.poster_path}}" alt="">
-        <a routerLink='' mat-raised-button color="primary" matTooltip="Ano de Lançamento: {{i.release_date}}"
+        <a routerLink='detalhes' mat-raised-button color="primary" matTooltip="Resumo, ano de lançamento e mais informações"
         aria-label="Button that displays a tooltip when focused or hovered over">Mais Informações</a>
     </li>
 </ul>
