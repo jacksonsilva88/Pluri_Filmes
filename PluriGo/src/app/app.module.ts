@@ -21,6 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     HttpClientModule
   ],
+  exports:[
+    MoviesComponent,
+  ],
   providers: [NowPlayingService],
   bootstrap: [AppComponent]
 })

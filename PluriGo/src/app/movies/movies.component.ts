@@ -10,10 +10,10 @@ import { NowPlayingService } from './../now-playing.service';
 export class MoviesComponent implements OnInit {
 
 
-  filmes = [
-    {id: 1, nome: 'Jackson Silva', email:'jackson@email.com'},
-    {id: 2, nome: 'Natalia Guedes', email:'Natalia@email.com'}
-  ];
+  // filmes = [
+  //   {id: 1, nome: 'Jackson Silva', email:'jackson@email.com'},
+  //   {id: 2, nome: 'Natalia Guedes', email:'Natalia@email.com'}
+  // ];
   filme: any;
   constructor(private movieService: NowPlayingService) {
 
@@ -24,6 +24,6 @@ export class MoviesComponent implements OnInit {
     console.log(this.getFilmes());
   }
   getFilmes(){
-    this.movieService.getFilmes().then(dados => this.filme = dados.result);
+    this.movieService.getFilmes().then(dados => this.filme = dados.results);
   }
 }
