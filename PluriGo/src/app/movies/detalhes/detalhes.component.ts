@@ -26,12 +26,13 @@ export class DetalhesComponent implements OnInit {
       }
     );
     this.getDetalhes();
+    console.log(this.getDetalhes());
     //console.log(this.inscricao);
     //this.getDetalhes()
   }
   getDetalhes(){
     this.movieService.getDetalhes(this.id).then(dados => this.detalhes = dados);
-    console.log(this.getDetalhes());
+    
     //this.movieService.getFilmes().then(dados => this.filme = dados.results);
   }
 
