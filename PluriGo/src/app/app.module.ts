@@ -16,6 +16,7 @@ import { NowPlayingService }  from './now-playing.service';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatButtonModule,
     MatTooltipModule,
     MatToolbarModule,
+    MatIconModule,
     routing,
   ],
   exports:[
