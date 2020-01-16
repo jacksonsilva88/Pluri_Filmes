@@ -17,6 +17,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatTooltipModule,
     MatToolbarModule,
     MatIconModule,
+    MatCardModule,
     routing,
   ],
   exports:[

@@ -1,11 +1,15 @@
 <h1>TItulo da pagina</h1>
-<!-- {{filmes}} -->
+<div class="container">
 
-<ul>
-    <li *ngFor="let i of filme">
-        {{i.title}}
-        <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{i.poster_path}}" alt="">
-        <a routerLink='detalhes/{{i.id}}' mat-raised-button color="primary" matTooltip="Resumo, ano de lançamento e mais informações"
-        aria-label="Button that displays a tooltip when focused or hovered over">Mais Informações</a>
-    </li>
-</ul>
+    <mat-card class="filme-card" *ngFor="let i of filme">
+        <mat-card-header>
+            <mat-card-title>{{i.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{i.poster_path}}" alt="Poster do Filme: {{i.title}} ">
+        <mat-card-actions>
+            <a routerLink='detalhes/{{i.id}}' mat-raised-button color="primary" matTooltip="Resumo, ano de lançamento e mais informações"
+            aria-label="Button that displays a tooltip when focused or hovered over">Mais Informações</a>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
