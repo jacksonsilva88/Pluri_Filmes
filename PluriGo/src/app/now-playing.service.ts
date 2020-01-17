@@ -15,8 +15,7 @@ export class NowPlayingService {
     this.baseURL  = 'https://api.themoviedb.org/3';
     this.api_key = '?api_key=37cd551d86fb77d5d2b7384b4cd9f0c3&';
     this.lang = 'language=pt-BR';
-    //console.log(this.getFilmes());
-    //console.log(this.getDetalhes(419704));
+    
   }
 
   getFilmes():Promise<any>{

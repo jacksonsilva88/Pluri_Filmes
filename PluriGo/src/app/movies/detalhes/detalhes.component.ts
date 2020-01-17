@@ -22,18 +22,15 @@ export class DetalhesComponent implements OnInit {
     this.inscricao = this.rota.params.subscribe(
       (params: any) => {
         this.id = params['id'];
-        //console.log(this.id);
       }
     );
     this.getDetalhes();
-    //console.log(this.getDetalhes());
-    //console.log(this.inscricao);
-    //this.getDetalhes()
+   
   }
   getDetalhes(){
     this.movieService.getDetalhes(this.id).then(dados => this.detalhes = dados);
     
-    //this.movieService.getFilmes().then(dados => this.filme = dados.results);
+
   }
 
   ngOnDestroy(){
