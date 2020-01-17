@@ -21,6 +21,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatDividerModule,
     MatChipsModule,
     MatTabsModule,
+    MatProgressSpinnerModule,
     routing,
   ],
   exports:[
