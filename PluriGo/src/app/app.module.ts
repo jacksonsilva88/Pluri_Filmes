@@ -20,7 +20,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatChipsModule} from '@angular/material/chips';
-import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule,
     MatDividerModule,
     MatChipsModule,
-    MatGridListModule,
+    MatTabsModule,
     routing,
   ],
   exports:[

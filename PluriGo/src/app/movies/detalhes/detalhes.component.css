@@ -5,3 +5,11 @@
    .head-title > h1{
      font-weight: 400;
    }
+   .tab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
