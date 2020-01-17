@@ -1,6 +1,28 @@
 <app-header></app-header>
-<div class="head-title" color="primary">
-    <h1 class="mat-headline" color="primary">Lançamentos</h1>
-    <mat-divider></mat-divider>
+<div class="container">
+    <section class="filmes-info">
+        <div class="column">
+            <div class="poster">
+                <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{detalhes?.poster_path}}" alt="">
+            </div>
+            <div class="info-meta">
+                <h2>{{ detalhes?.title }}</h2>
+                <div class="resume_filme">
+                    <h4>Overview</h4>
+                    <p>
+                    {{detalhes?.overview}}
+                    </p>
+                    <div class="data-director">
+                        <mat-grid-list cols="2" rowHeight="2:1">
+                            <mat-grid-tile>1</mat-grid-tile>
+                            <mat-grid-tile>2</mat-grid-tile>
+                            <mat-grid-tile>3</mat-grid-tile>
+                            <mat-grid-tile>4</mat-grid-tile>
+                          </mat-grid-list>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>detalhes works!</p>
+    </section>
 </div>
-<h1>{{detalhes?.title}}</h1>
