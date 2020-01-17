@@ -1,5 +1,9 @@
+.layout-grid{
+    display: grid;
+    grid-template-columns: 100%;
+}
 .filme-card {
-    max-width: 350px;
+    max-width: 300px;
     margin: 15px;
   }
   .head-title{
@@ -23,3 +27,24 @@
     display: flex;
       width: 50%;
   }
+  @media (min-width: 768px){
+    .layout-grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+@media (min-width: 1024px){
+    .layout-grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    
+}
+@media (min-width: 1440px){
+    .layout-grid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+}
